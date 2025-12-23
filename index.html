@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="./chess-icon.png" type="image/png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chess-Llama</title>
+	</head>
+	<body>
+		<main>
+			<div id="app"></div>
+			<div id="controls">
+				<div id="sidebar-header">
+					<h1>Chess-Llama</h1>
+				</div>
+				<label>
+					Chess-Llama Level:
+					<select id="difficulty">
+						<option value="0">Hard</option>
+						<option value="1">Intermediate</option>
+						<option value="2">Easy</option>
+						<option value="3">Very Easy</option>
+					</select>
+				</label>
+				<div id="movesHeader">Moves</div>
+				<div id="moves"></div>
+				<div id="undocontainer">
+					<button id="undo">Undo</button>
+				</div>
+			</div>
+		</main>
+		<dialog id="colorDialog">
+			<h1>Choose a color</h1>
+			<div class="pieces">
+				<div class="piece-container">
+					<div class="piece king"></div>
+					<button id="whiteSelection">White</button>
+				</div>
+				<div class="piece-container">
+					<div class="piece black king"></div>
+					<button id="blackSelection">Black</button>
+				</div>
+			</div>
+		</dialog>
+
+		<dialog id="promotionDialog">
+			<h1>Choose a piece</h1>
+			<div class="pieces">
+				<div class="piece-container">
+					<div class="piece queen"></div>
+					<button id="queenPromotion" value="q">Queen</button>
+				</div>
+				<div class="piece-container">
+					<div class="piece rook"></div>
+					<button id="rookPromotion" value="r">Rook</button>
+				</div>
+				<div class="piece-container">
+					<div class="piece bishop"></div>
+					<button id="bishopPromotion" value="b">Bishop</button>
+				</div>
+				<div class="piece-container">
+					<div class="piece knight"></div>
+					<button id="knightPromotion" value="n">Knight</button>
+				</div>
+			</div>
+		</dialog>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
