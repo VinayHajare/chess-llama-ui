@@ -1,11 +1,11 @@
 # Chess-Llama
-A Chess player a tiny Llama-based decoder-only transformer model for chess play, consisting of 23M parameters. The model is trained on a 3 million high-quality chess games from the Lichess Elite Database, on a single Nvidia L4 GPU for 18 hours, using the Google Cloud’s Vertex AI platform.
+A Web UI for a tiny Llama-based decoder-only transformer model for chess play, consisting of 23M parameters. The model is trained on a 3 million high-quality chess games from the Lichess Elite Database, on a single Nvidia L4 GPU for 18 hours, using the Google Cloud’s Vertex AI platform.
 
 [View on Huggingface](https://huggingface.co/lazy-guy12/chess-llama)
 
 # Web Version
 This model can be run within a browser, thanks to Huggingface transformers.js!
-You can try it [here]()
+You can try it [here](https://vinayhajare.github.io/chess-llama-ui/)
 
 
 # Performance
